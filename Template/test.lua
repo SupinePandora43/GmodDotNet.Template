@@ -20,3 +20,4 @@ end
 run_test()
 
 print("tests are successful!")
+file.Write("success.txt", "done")
