@@ -33,7 +33,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: Template Linux
-        path: "Template/bin/Release/net5/linux-x64/publish/*"
+        path: ./gmod/garrysmod/lua/bin/Modules/Template/*
         retention-days: 10
     - name: Copy test.lua
       run: cp test.lua ./gmod/garrysmod/lua/autorun
@@ -77,7 +77,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: Template Windows
-        path: "Template/bin/Release/net5/win-x64/publish/*"
+        path: gmod/garrysmod/lua/bin/Modules/Template/*
         retention-days: 10
     - name: Copy test.lua
       run: cp test.lua ./gmod/garrysmod/lua/autorun
@@ -112,5 +112,5 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: Template MacOS
-        path: "Template/bin/Release/net5/osx-x64/publish/*"
+        path: gmod/garrysmod/lua/bin/Modules/Template/*
         retention-days: 10
