@@ -1,9 +1,9 @@
 ﻿name: Build & Test
 on:
   push:
-    branches: [ sharp ]
+    branches: [ main ]
   pull_request:
-    branches: [ sharp ]
+    branches: [ main ]
 jobs:
   linux:
     runs-on: ubuntu-latest
