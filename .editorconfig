@@ -1,0 +1,13 @@
+﻿[*]
+end_of_line = crlf
+charset = utf-8-bom
+indent_style = tab
+# it's a religion
+insert_final_newline = true
+# strip whitespaces
+trim_trailing_whitespace = true
+[{*}.yml]
+indent_style = space
+indent_size = 2
+[*.xml]
+indent_style = space
