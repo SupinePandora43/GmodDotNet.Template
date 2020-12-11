@@ -28,7 +28,7 @@ jobs:
         tar -xvzf gmoddotnet.tar.gz -C ./gmod/garrysmod/lua/bin
         rm -rfv gmoddotnet.tar.gz
     - name: Build Module
-      run: dotnet publish Template.sln --configuration Release --framework net5.0 -o ./gmod/garrysmod/lua/bin/Modules/Template
+      run: dotnet publish Template.sln --configuration Release --framework net5 -o ./gmod/garrysmod/lua/bin/Modules/Template
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2
       with:
@@ -72,7 +72,7 @@ jobs:
         mkdir ./gmod/garrysmod/lua/bin
         powershell -Command 'Expand-Archive -LiteralPath ./gmoddotnet.zip -DestinationPath ./gmod/garrysmod/lua/bin'
     - name: Build Module
-      run: dotnet publish Template.sln --configuration Release --framework net5.0 -o ./gmod/garrysmod/lua/bin/Modules/Template
+      run: dotnet publish Template.sln --configuration Release --framework net5 -o ./gmod/garrysmod/lua/bin/Modules/Template
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2
       with:
@@ -107,7 +107,7 @@ jobs:
     - name: Install dependencies
       run: dotnet restore Template.sln
     - name: Build Module
-      run: dotnet publish Template.sln --configuration Release --framework net5.0
+      run: dotnet publish Template.sln --configuration Release --framework net5
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2
       with:
