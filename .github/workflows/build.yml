@@ -33,10 +33,10 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: Template Linux
-        path: "Template/bin/Release/net5.0/linux-x64/publish/*"
+        path: "Template/bin/Release/net5/linux-x64/publish/*"
         retention-days: 10
     - name: Copy test.lua
-      run: cp Template/test.lua ./gmod/garrysmod/lua/autorun
+      run: cp test.lua ./gmod/garrysmod/lua/autorun
       continue-on-error: true
     - name: Run Garry's Mod
       run: ./srcds_run_x64 -game garrysmod -systemtest -condebug +sv_hibernate_think 1 || true
@@ -77,10 +77,10 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: Template Windows
-        path: "Template/bin/Release/net5.0/win-x64/publish/*"
+        path: "Template/bin/Release/net5/win-x64/publish/*"
         retention-days: 10
     - name: Copy test.lua
-      run: cp Template/test.lua ./gmod/garrysmod/lua/autorun
+      run: cp test.lua ./gmod/garrysmod/lua/autorun
     - name: Run Garry's Mod
       shell: bash
       run: |
@@ -112,5 +112,5 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: Template MacOS
-        path: "Template/bin/Release/net5.0/osx-x64/publish/*"
+        path: "Template/bin/Release/net5/osx-x64/publish/*"
         retention-days: 10
