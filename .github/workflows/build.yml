@@ -100,8 +100,8 @@ jobs:
     runs-on: macos-latest
     steps:
     - name: Install dependencies
-      run: dotnet restore GmodUltralight.sln
-    - name: Build
+      run: dotnet restore Template.sln
+    - name: Build Module
       run: dotnet publish Template.sln --configuration Release --framework net5.0
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2
