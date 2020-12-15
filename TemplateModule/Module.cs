@@ -1,10 +1,10 @@
 ﻿using GmodNET.API;
 
-namespace Examples
+namespace TemplateModule
 {
-    public class HelloWorld : IModule
+    public class Module : IModule
     {
-        public string ModuleName => "HelloWorld";
+        public string ModuleName => "TemplateModule";
 
         public string ModuleVersion => "1.0.0";
 

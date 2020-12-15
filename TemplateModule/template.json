@@ -2,11 +2,13 @@
 	"$schema": "http://json.schemastore.org/template",
 	"author": "SupinePandora43",
 	"classifications": [ "Common", "Library", "C#9" ],
-	"identity": "GmodDotNet.Template",
+	"identity": "Supine.GmodDotNetTemplate",
 	"name": "GmodDotNet Module Template",
 	"shortName": "gmodnet-module",
 	"tags": {
 		"language": "C#",
-		"type": "project"
-	}
+		"type": "item"
+	},
+	"sourceName": "TemplateModule",
+    "preferNameDirectory" : true
 }
